@@ -11,4 +11,7 @@ def fruits_into_baskets(fruits):
     fruit_frequency[right_fruit] += 1
 
   # shrink the sliding window, until we are left with '2' fruits in the fruit
-  # frequency dictionary
+  # frequency dictionary 
+
+  # now what in the world if a frequency dictionary
+  
