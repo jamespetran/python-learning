@@ -1,7 +1,3 @@
-from operator import le
-from unittest.util import _MAX_LENGTH
-
-
 def fruits_into_baskets(fruits):
     window_start = 0
     # initial index of window is 0
@@ -41,7 +37,7 @@ def fruits_into_baskets(fruits):
                 # check to see if that made the frequency fall to zero
                 del fruit_frequency[left_fruit]
                 # if frequency == 0 then delete it from the dictionary
-            window_start += 1  
+            window_start += 1
             # shrink the window
         max_length = max(max_length, window_end-window_start + 1)
         # check if max length has changed -> assign it to maximum of ( prev value OR window_length + 1)
@@ -49,7 +45,6 @@ def fruits_into_baskets(fruits):
     # return the max length value once the
     # for window_end in range(len(fruits)):
     # has run through the whole fruits[] list beginning to end
-
 
 
 def main():
