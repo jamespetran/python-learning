@@ -1,11 +1,9 @@
-def fibonacciSeries(max):
-    a, b = 0, 1
-    while a < max:
-        print(a)
-        a, b = b, a+b
+def fib(n):
+  """Print a fibonacci series up to n"""
+  a, b = 0, 1
+  while a < n:
+    print(a, end=' ')
+    a, b = b, a+b
+  print()
 
-
-def main(value):
-    fibonacciSeries(value)
-
-main(1000)
+fib(2000)
